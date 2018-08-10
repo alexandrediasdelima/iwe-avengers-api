@@ -29,4 +29,19 @@ Scenario: Atualizando Avenger
 Given path 'avengers', 'sdsa-sasa-asas-sasa'
 And request {name: 'Captain America' ,  secretIdentity: 'Steve Rogers'}
 When method put
-Then status 204
+Then status 200
+
+Scenario: Register Avenger with 
+
+Given path 'avengers'
+And request {secretIdentity: 'Steve Rogers'}
+When method post
+Then status 400
+
+Scenario: Register Avenger with invalid payload
+
+Given path 'avengers', 'sdsa-sasa-asas-sasa'
+And request {secretIdentity: 'Steve Rogers'}
+When method put
+Then status 400
+
