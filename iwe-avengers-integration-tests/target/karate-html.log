@@ -1,24 +1,24 @@
-22:38:49.068 karate.env system property was: null 
-22:38:49.459 request:
+22:00:07.358 karate.env system property was: null 
+22:00:07.749 request:
 1 > GET https://7cpsx8lbbf.execute-api.us-east-2.amazonaws.com/dev/avengers/sdsa-sasa-asas-sasa
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
 1 > Host: 7cpsx8lbbf.execute-api.us-east-2.amazonaws.com
 1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
 
-22:38:50.514 response time in milliseconds: 1055
-1 < 400
+22:00:09.609 response time in milliseconds: 1860
+1 < 200
 1 < Connection: keep-alive
-1 < Content-Length: 188
+1 < Content-Length: 76
 1 < Content-Type: application/json
-1 < Date: Fri, 10 Aug 2018 01:38:50 GMT
-1 < x-amz-apigw-id: LYnqoFH8iYcFzqw=
-1 < x-amzn-RequestId: 21d4ce60-9c3e-11e8-a7ca-af498f200f9a
-{"message": "Could not parse request body into json: Unexpected character (\'.\' (code 46)): was expecting comma to separate Object entries\n at [Source: [B@ea29620; line: 2, column: 12]"}
+1 < Date: Wed, 15 Aug 2018 01:00:09 GMT
+1 < X-Amzn-Trace-Id: Root=1-5b737b18-707d7fe0b0db4460c0048938;Sampled=0
+1 < x-amz-apigw-id: LpAr3HnYiYcFWXQ=
+1 < x-amzn-RequestId: 8e0a48ff-a026-11e8-990d-0d909c2bf409
+{"id":"sdsa-sasa-asas-sasa","name":"Iron Man","secretIdentity":"Tony Stark"}
 
-22:38:50.539 status code was: 400, expected: 200, response time: 1055, url: https://7cpsx8lbbf.execute-api.us-east-2.amazonaws.com/dev/avengers/sdsa-sasa-asas-sasa, response: {"message":"Could not parse request body into json: Unexpected character ('.' (code 46)): was expecting comma to separate Object entries\n at [Source: [B@ea29620; line: 2, column: 12]"}
-22:38:50.557 karate.env system property was: null 
-22:38:50.569 request:
+22:00:09.654 karate.env system property was: null 
+22:00:09.659 request:
 1 > POST https://7cpsx8lbbf.execute-api.us-east-2.amazonaws.com/dev/avengers
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
@@ -28,35 +28,36 @@
 1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
 {"name":"Captain America","secretIdentity":"Steve Rogers"}
 
-22:38:51.183 response time in milliseconds: 614
+22:00:10.257 response time in milliseconds: 597
 1 < 201
 1 < Connection: keep-alive
-1 < Content-Length: 79
+1 < Content-Length: 67
 1 < Content-Type: application/json
-1 < Date: Fri, 10 Aug 2018 01:38:51 GMT
-1 < x-amz-apigw-id: LYnqvFGVCYcF4Lg=
-1 < x-amzn-RequestId: 223b7fb9-9c3e-11e8-9454-efc52d538fd8
-{"id": "#string" , "name": "Captain America", "secretIdentity": "Steve Rogers"}
+1 < Date: Wed, 15 Aug 2018 01:00:10 GMT
+1 < X-Amzn-Trace-Id: Root=1-5b737b1a-2627ba6caeae87193b2136ac;Sampled=0
+1 < x-amz-apigw-id: LpAsFE72CYcFrZA=
+1 < x-amzn-RequestId: 8ee5dbde-a026-11e8-b616-e5f12fc49cd2
+{"id":"7","name":"Captain America","secretIdentity":"Steve Rogers"}
 
-22:38:51.194 karate.env system property was: null 
-22:38:51.196 request:
+22:00:10.268 karate.env system property was: null 
+22:00:10.270 request:
 1 > DELETE https://7cpsx8lbbf.execute-api.us-east-2.amazonaws.com/dev/avengers/sdsa-sasa-asas-sasa
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
 1 > Host: 7cpsx8lbbf.execute-api.us-east-2.amazonaws.com
 1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
 
-22:38:51.717 response time in milliseconds: 521
+22:00:10.770 response time in milliseconds: 500
 1 < 204
 1 < Connection: keep-alive
 1 < Content-Length: 0
 1 < Content-Type: application/json
-1 < Date: Fri, 10 Aug 2018 01:38:51 GMT
-1 < x-amz-apigw-id: LYnq0GOdCYcFcLg=
-1 < x-amzn-RequestId: 22911914-9c3e-11e8-9d21-0d91ca17cdab
+1 < Date: Wed, 15 Aug 2018 01:00:10 GMT
+1 < x-amz-apigw-id: LpAsLFcDiYcFwFw=
+1 < x-amzn-RequestId: 8f3b2797-a026-11e8-9c17-b5ef901f7ac8
 
-22:38:51.728 karate.env system property was: null 
-22:38:51.730 request:
+22:00:10.780 karate.env system property was: null 
+22:00:10.783 request:
 1 > PUT https://7cpsx8lbbf.execute-api.us-east-2.amazonaws.com/dev/avengers/sdsa-sasa-asas-sasa
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
@@ -66,18 +67,37 @@
 1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
 {"name":"Captain America","secretIdentity":"Steve Rogers"}
 
-22:38:52.270 response time in milliseconds: 540
+22:00:11.302 response time in milliseconds: 519
 1 < 200
 1 < Connection: keep-alive
 1 < Content-Length: 0
 1 < Content-Type: application/json
-1 < Date: Fri, 10 Aug 2018 01:38:52 GMT
-1 < x-amz-apigw-id: LYnq6Ea6CYcFsFQ=
-1 < x-amzn-RequestId: 22e469d2-9c3e-11e8-94aa-33abbae4de1a
+1 < Date: Wed, 15 Aug 2018 01:00:11 GMT
+1 < x-amz-apigw-id: LpAsQEfiCYcFxxg=
+1 < x-amzn-RequestId: 8f8c062c-a026-11e8-aae0-bdcbaf97659e
 
 
-22:38:52.279 karate.env system property was: null 
-22:38:52.282 request:
+22:00:11.312 karate.env system property was: null 
+22:00:11.318 request:
+1 > GET https://7cpsx8lbbf.execute-api.us-east-2.amazonaws.com/dev/avengers/invalid
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: 7cpsx8lbbf.execute-api.us-east-2.amazonaws.com
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
+
+22:00:11.835 response time in milliseconds: 517
+1 < 404
+1 < Connection: keep-alive
+1 < Content-Length: 316
+1 < Content-Type: application/json
+1 < Date: Wed, 15 Aug 2018 01:00:11 GMT
+1 < X-Amzn-Trace-Id: Root=1-5b737b1b-1b85e667a193907422a0a146;Sampled=0
+1 < x-amz-apigw-id: LpAsVFsACYcFdlQ=
+1 < x-amzn-RequestId: 8fdaea17-a026-11e8-b686-c1f0b71e986f
+{"errorMessage":"[NotFound] - Avenger idinvalidnot found","errorType":"com.iwe.avenger.lambda.exception.AvengerNotFoundException","stackTrace":["com.iwe.avengers.SearchAvengersHandler.handleRequest(SearchAvengersHandler.java:27)","com.iwe.avengers.SearchAvengersHandler.handleRequest(SearchAvengersHandler.java:1)"]}
+
+22:00:11.845 karate.env system property was: null 
+22:00:11.847 request:
 1 > POST https://7cpsx8lbbf.execute-api.us-east-2.amazonaws.com/dev/avengers
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
@@ -87,18 +107,18 @@
 1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
 {"secretIdentity":"Steve Rogers"}
 
-22:38:52.827 response time in milliseconds: 545
+22:00:12.341 response time in milliseconds: 494
 1 < 400
 1 < Connection: keep-alive
 1 < Content-Length: 35
 1 < Content-Type: application/json
-1 < Date: Fri, 10 Aug 2018 01:38:52 GMT
-1 < x-amz-apigw-id: LYnq_EEqiYcFtXQ=
-1 < x-amzn-RequestId: 2338a3dc-9c3e-11e8-b260-fb65df4599bd
+1 < Date: Wed, 15 Aug 2018 01:00:12 GMT
+1 < x-amz-apigw-id: LpAsaFPaiYcF4Bg=
+1 < x-amzn-RequestId: 902b060c-a026-11e8-bb8e-bd6c41d1646f
 {"message": "Invalid request body"}
 
-22:38:52.836 karate.env system property was: null 
-22:38:52.838 request:
+22:00:12.356 karate.env system property was: null 
+22:00:12.359 request:
 1 > PUT https://7cpsx8lbbf.execute-api.us-east-2.amazonaws.com/dev/avengers/sdsa-sasa-asas-sasa
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
@@ -108,29 +128,17 @@
 1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
 {"secretIdentity":"Steve Rogers"}
 
-22:38:53.379 response time in milliseconds: 540
+22:00:12.900 response time in milliseconds: 541
 1 < 400
 1 < Connection: keep-alive
 1 < Content-Length: 35
 1 < Content-Type: application/json
-1 < Date: Fri, 10 Aug 2018 01:38:53 GMT
-1 < x-amz-apigw-id: LYnrFH6KiYcFgbQ=
-1 < x-amzn-RequestId: 238e6561-9c3e-11e8-b49d-9333d9576234
+1 < Date: Wed, 15 Aug 2018 01:00:12 GMT
+1 < x-amz-apigw-id: LpAsgFdACYcFwFw=
+1 < x-amzn-RequestId: 907db99b-a026-11e8-9c17-b5ef901f7ac8
 {"message": "Invalid request body"}
 
-cript src="//a0.awsstatic.com/target/1.0.96/aws-target-mediator.js"></script>
-</head>
-<body>
-
-  <header id="aws-page-header" class="aws" role="banner"> 
- <div id="aws-nav" class="aws-nav" role="navigation"> 
-  <div class="aws-nav-header"> 
-   <div class="aws-nav-header-left"> 
-    <div id="aws-nav-flyout-trigger" class="aws-nav-flyout-trigger" data-flyout="aws-nav-flyout-1-root" tabindex="1"> 
-     <i class="aws-nav-icon-reorder"></i>Menu 
-    </div> 
-    <div class="aws-bg-logo lb-bg-logo aws-amazon_web_services_smile-header-desktop-en"> 
-     <a href="https://aws.amazon.com/?nc2=h_lg"><span>Click here to return to Amazon Web Services homepage</span></a> 
+an></a> 
     </div> 
     <div id="aws-nav-quicklinks" class="aws-nav-quicklinks"> 
      <div class="aws-nav-quicklink"> 

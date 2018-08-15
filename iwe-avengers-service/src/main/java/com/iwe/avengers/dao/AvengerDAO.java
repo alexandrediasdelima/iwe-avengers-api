@@ -22,5 +22,24 @@ public class AvengerDAO {
 		return mapper.get(id);
 	}
 
+
+	public Avenger create(Avenger avenger) {
+		
+		String id = mapper.size() + "";
+		avenger.setId(id);
+		
+		mapper.put(id, avenger);
+		
+		return avenger;
+		
+	}
+
+
+	public Avenger remove(String id) {
+		
+			 return mapper.remove(id);
+		} 
+		
+		
 	
 }
