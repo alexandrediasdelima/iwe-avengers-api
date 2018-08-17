@@ -8,28 +8,30 @@ import com.iwe.avenger.lambda.response.HandlerResponse;
 import com.iwe.avengers.dao.AvengerDAO;
 
 public class RemoveAvengerHandler implements RequestHandler<Avenger, HandlerResponse> {
-
-	private AvengerDAO dao = new AvengerDAO();
+	
+private AvengerDAO dao = new AvengerDAO();
 	
 	@Override
 	public HandlerResponse handleRequest(final Avenger avenger, final Context context) {
 
-		String id = avenger.getId();
-		
-		context.getLogger().log("[#] - delete Avenger wiht id:" + id);
-		
-		Avenger avengerResponse = dao.find(id);
-		
-		if(avengerResponse == null) {
-			throw new AvengerNotFoundException("[NotFound] - Avenger id" + id + "not found");
-		} else {
-			dao.remove(id);
+		final String id = avenger.getId();
+
+		context.getLogger().log("[#] - Searching Avenger with id: " + id);
+
+		final Avenger retrivedAvenger = dao.find(id);
+
+		if (retrivedAvenger == null) {
+			throw new AvengerNotFoundException("[NotFound] - Avenger id: " + id + " not found");
 		}
-		
-		final HandlerResponse response = HandlerResponse.builder().setStatusCode(204).setObjectBody(avengerResponse).build();
-		
+
+		context.getLogger().log("[#] - Avenger found! Removing...");
+
+		dao.remove(id);
+
+		context.getLogger().log("[#] - Successfully removed Avenger");
+
+		final HandlerResponse response = HandlerResponse.builder().build();
+
 		return response;
-		
-		
 	}
 }

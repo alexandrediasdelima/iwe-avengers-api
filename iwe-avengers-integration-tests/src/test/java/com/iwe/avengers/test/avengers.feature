@@ -3,12 +3,7 @@ Feature: Perform integrated tests on the Avengers registration API
 Background:
 * url 'https://7cpsx8lbbf.execute-api.us-east-2.amazonaws.com/dev'
 
-Scenario: Get Avenger by Id
 
-Given path 'avengers', 'sdsa-sasa-asas-sasa'
-When method get
-Then status 200
-And match response == {id: '#string' , name: 'Iron Man', secretIdentity: 'Tony Stark'}
 
 Scenario: Registry a new Avenger
 
@@ -18,11 +13,19 @@ When method post
 Then status 201
 And match response == {id: '#string' , name: 'Captain America', secretIdentity: 'Steve Rogers'}
 
-Scenario: delete Avenger
+* def savedAvenger = response
 
-Given path 'avengers', 'sdsa-sasa-asas-sasa'
-When method delete
-Then status 204
+#get Avenger by id
+Given path 'avengers', savedAvenger.id
+When method get
+Then status 200
+And match $ == savedAvenger
+
+
+
+
+
+
 
 Scenario: Atualizando Avenger
 

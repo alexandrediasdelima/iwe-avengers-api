@@ -1,24 +1,5 @@
-22:00:07.358 karate.env system property was: null 
-22:00:07.749 request:
-1 > GET https://7cpsx8lbbf.execute-api.us-east-2.amazonaws.com/dev/avengers/sdsa-sasa-asas-sasa
-1 > Accept-Encoding: gzip,deflate
-1 > Connection: Keep-Alive
-1 > Host: 7cpsx8lbbf.execute-api.us-east-2.amazonaws.com
-1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
-
-22:00:09.609 response time in milliseconds: 1860
-1 < 200
-1 < Connection: keep-alive
-1 < Content-Length: 76
-1 < Content-Type: application/json
-1 < Date: Wed, 15 Aug 2018 01:00:09 GMT
-1 < X-Amzn-Trace-Id: Root=1-5b737b18-707d7fe0b0db4460c0048938;Sampled=0
-1 < x-amz-apigw-id: LpAr3HnYiYcFWXQ=
-1 < x-amzn-RequestId: 8e0a48ff-a026-11e8-990d-0d909c2bf409
-{"id":"sdsa-sasa-asas-sasa","name":"Iron Man","secretIdentity":"Tony Stark"}
-
-22:00:09.654 karate.env system property was: null 
-22:00:09.659 request:
+22:45:50.596 karate.env system property was: null 
+22:45:51.080 request:
 1 > POST https://7cpsx8lbbf.execute-api.us-east-2.amazonaws.com/dev/avengers
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
@@ -28,36 +9,37 @@
 1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
 {"name":"Captain America","secretIdentity":"Steve Rogers"}
 
-22:00:10.257 response time in milliseconds: 597
+22:45:52.266 response time in milliseconds: 1186
 1 < 201
 1 < Connection: keep-alive
-1 < Content-Length: 67
+1 < Content-Length: 102
 1 < Content-Type: application/json
-1 < Date: Wed, 15 Aug 2018 01:00:10 GMT
-1 < X-Amzn-Trace-Id: Root=1-5b737b1a-2627ba6caeae87193b2136ac;Sampled=0
-1 < x-amz-apigw-id: LpAsFE72CYcFrZA=
-1 < x-amzn-RequestId: 8ee5dbde-a026-11e8-b616-e5f12fc49cd2
-{"id":"7","name":"Captain America","secretIdentity":"Steve Rogers"}
+1 < Date: Fri, 17 Aug 2018 01:45:52 GMT
+1 < X-Amzn-Trace-Id: Root=1-5b7628d0-4f7bb580e62065f0f8def3f8;Sampled=0
+1 < x-amz-apigw-id: LvtQgHz9iYcFrZA=
+1 < x-amzn-RequestId: 4607c5a1-a1bf-11e8-b616-e5f12fc49cd2
+{"id":"ec4edd87-e014-4f2e-95ca-b477419a6a13","name":"Captain America","secretIdentity":"Steve Rogers"}
 
-22:00:10.268 karate.env system property was: null 
-22:00:10.270 request:
-1 > DELETE https://7cpsx8lbbf.execute-api.us-east-2.amazonaws.com/dev/avengers/sdsa-sasa-asas-sasa
-1 > Accept-Encoding: gzip,deflate
-1 > Connection: Keep-Alive
-1 > Host: 7cpsx8lbbf.execute-api.us-east-2.amazonaws.com
-1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
+22:45:52.267 request:
+2 > GET https://7cpsx8lbbf.execute-api.us-east-2.amazonaws.com/dev/avengers/ec4edd87-e014-4f2e-95ca-b477419a6a13
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Host: 7cpsx8lbbf.execute-api.us-east-2.amazonaws.com
+2 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
 
-22:00:10.770 response time in milliseconds: 500
-1 < 204
-1 < Connection: keep-alive
-1 < Content-Length: 0
-1 < Content-Type: application/json
-1 < Date: Wed, 15 Aug 2018 01:00:10 GMT
-1 < x-amz-apigw-id: LpAsLFcDiYcFwFw=
-1 < x-amzn-RequestId: 8f3b2797-a026-11e8-9c17-b5ef901f7ac8
+22:45:53.265 response time in milliseconds: 998
+2 < 200
+2 < Connection: keep-alive
+2 < Content-Length: 102
+2 < Content-Type: application/json
+2 < Date: Fri, 17 Aug 2018 01:45:53 GMT
+2 < X-Amzn-Trace-Id: Root=1-5b7628d0-7d72f92e49f929269ba27ebc;Sampled=0
+2 < x-amz-apigw-id: LvtQnHhKCYcF3jw=
+2 < x-amzn-RequestId: 46718417-a1bf-11e8-9c69-3fe8fa2f407b
+{"id":"ec4edd87-e014-4f2e-95ca-b477419a6a13","name":"Captain America","secretIdentity":"Steve Rogers"}
 
-22:00:10.780 karate.env system property was: null 
-22:00:10.783 request:
+22:45:53.281 karate.env system property was: null 
+22:45:53.282 request:
 1 > PUT https://7cpsx8lbbf.execute-api.us-east-2.amazonaws.com/dev/avengers/sdsa-sasa-asas-sasa
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
@@ -67,37 +49,18 @@
 1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
 {"name":"Captain America","secretIdentity":"Steve Rogers"}
 
-22:00:11.302 response time in milliseconds: 519
+22:45:53.797 response time in milliseconds: 515
 1 < 200
 1 < Connection: keep-alive
 1 < Content-Length: 0
 1 < Content-Type: application/json
-1 < Date: Wed, 15 Aug 2018 01:00:11 GMT
-1 < x-amz-apigw-id: LpAsQEfiCYcFxxg=
-1 < x-amzn-RequestId: 8f8c062c-a026-11e8-aae0-bdcbaf97659e
+1 < Date: Fri, 17 Aug 2018 01:45:53 GMT
+1 < x-amz-apigw-id: LvtQxEC9CYcF3pw=
+1 < x-amzn-RequestId: 4709f333-a1bf-11e8-97a5-6d1eb2b15a7b
 
 
-22:00:11.312 karate.env system property was: null 
-22:00:11.318 request:
-1 > GET https://7cpsx8lbbf.execute-api.us-east-2.amazonaws.com/dev/avengers/invalid
-1 > Accept-Encoding: gzip,deflate
-1 > Connection: Keep-Alive
-1 > Host: 7cpsx8lbbf.execute-api.us-east-2.amazonaws.com
-1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
-
-22:00:11.835 response time in milliseconds: 517
-1 < 404
-1 < Connection: keep-alive
-1 < Content-Length: 316
-1 < Content-Type: application/json
-1 < Date: Wed, 15 Aug 2018 01:00:11 GMT
-1 < X-Amzn-Trace-Id: Root=1-5b737b1b-1b85e667a193907422a0a146;Sampled=0
-1 < x-amz-apigw-id: LpAsVFsACYcFdlQ=
-1 < x-amzn-RequestId: 8fdaea17-a026-11e8-b686-c1f0b71e986f
-{"errorMessage":"[NotFound] - Avenger idinvalidnot found","errorType":"com.iwe.avenger.lambda.exception.AvengerNotFoundException","stackTrace":["com.iwe.avengers.SearchAvengersHandler.handleRequest(SearchAvengersHandler.java:27)","com.iwe.avengers.SearchAvengersHandler.handleRequest(SearchAvengersHandler.java:1)"]}
-
-22:00:11.845 karate.env system property was: null 
-22:00:11.847 request:
+22:45:53.797 karate.env system property was: null 
+22:45:53.812 request:
 1 > POST https://7cpsx8lbbf.execute-api.us-east-2.amazonaws.com/dev/avengers
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
@@ -107,17 +70,64 @@
 1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
 {"secretIdentity":"Steve Rogers"}
 
-22:00:12.341 response time in milliseconds: 494
+22:45:54.311 response time in milliseconds: 499
 1 < 400
 1 < Connection: keep-alive
 1 < Content-Length: 35
 1 < Content-Type: application/json
-1 < Date: Wed, 15 Aug 2018 01:00:12 GMT
-1 < x-amz-apigw-id: LpAsaFPaiYcF4Bg=
-1 < x-amzn-RequestId: 902b060c-a026-11e8-bb8e-bd6c41d1646f
+1 < Date: Fri, 17 Aug 2018 01:45:54 GMT
+1 < x-amz-apigw-id: LvtQ2GUxiYcFsdQ=
+1 < x-amzn-RequestId: 475813da-a1bf-11e8-aed4-45e1a3daa639
 {"message": "Invalid request body"}
 
-22:00:12.356 karate.env system property was: null 
+22:45:54.311 karate.env system property was: null 
+22:45:54.311 request:
+1 > PUT https://7cpsx8lbbf.execute-api.us-east-2.amazonaws.com/dev/avengers/sdsa-sasa-asas-sasa
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 33
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: 7cpsx8lbbf.execute-api.us-east-2.amazonaws.com
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
+{"secretIdentity":"Steve Rogers"}
+
+22:45:54.827 response time in milliseconds: 516
+1 < 400
+1 < Connection: keep-alive
+1 < Content-Length: 35
+1 < Content-Type: application/json
+1 < Date: Fri, 17 Aug 2018 01:45:54 GMT
+1 < x-amz-apigw-id: LvtQ7FHCCYcFaoQ=
+1 < x-amzn-RequestId: 47a65a85-a1bf-11e8-bc6f-4750c469d2e0
+{"message": "Invalid request body"}
+
+
+tId: 6d7cab60-a1a6-11e8-aa1b-cbb017b87f43
+{"message": "Invalid request body"}
+
+19:48:00.849 karate.env system property was: null 
+19:48:00.849 request:
+1 > PUT https://7cpsx8lbbf.execute-api.us-east-2.amazonaws.com/dev/avengers/sdsa-sasa-asas-sasa
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 33
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: 7cpsx8lbbf.execute-api.us-east-2.amazonaws.com
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
+{"secretIdentity":"Steve Rogers"}
+
+19:48:01.380 response time in milliseconds: 531
+1 < 400
+1 < Connection: keep-alive
+1 < Content-Length: 35
+1 < Content-Type: application/json
+1 < Date: Thu, 16 Aug 2018 22:48:01 GMT
+1 < x-amz-apigw-id: LvTNNEsiiYcFzNQ=
+1 < x-amzn-RequestId: 6dcd6410-a1a6-11e8-89b9-b993f344c7fb
+{"message": "Invalid request body"}
+
+
+ate.env system property was: null 
 22:00:12.359 request:
 1 > PUT https://7cpsx8lbbf.execute-api.us-east-2.amazonaws.com/dev/avengers/sdsa-sasa-asas-sasa
 1 > Accept-Encoding: gzip,deflate
