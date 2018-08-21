@@ -1,5 +1,7 @@
 package com.iwe.avengers.dao;
 
+import java.util.Optional;
+
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBMapper;
 import com.iwe.avenger.dynamodb.entity.Avenger;
 import com.iwe.avenger.dynamodb.manager.DynamoDBManager;
@@ -13,7 +15,7 @@ public class AvengerDAO {
 		
 		final Avenger avenger = mapper.load(Avenger.class, id);
 		
-		return avenger;
+		return Optional.ofNullable(avenger).get();
 	}
 
 
@@ -25,16 +27,10 @@ public class AvengerDAO {
 	}
 
 
-	public Avenger remove(String id) {
-		
-			 return null;
+	public void remove(Avenger avenger) {
+			mapper.delete(avenger);
+			 
 		} 
 	
-	
-	public Avenger update(Avenger avenger) {
-		return null;
-	}
-		
-		
 	
 }

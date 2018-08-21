@@ -19,6 +19,7 @@ public class SearchAvengersHandler implements RequestHandler<Avenger, HandlerRes
 	public HandlerResponse handleRequest(final Avenger avenger, final Context context) {
 		
 		HandlerResponse response = null;
+		 Avenger retriviedAvenger = null;
 		
 		try {
 		
@@ -26,14 +27,13 @@ public class SearchAvengersHandler implements RequestHandler<Avenger, HandlerRes
 		
 		context.getLogger().log("[#] - Searching Avenger wiht id:" + id);
 		
-		final Avenger retriviedAvenger = dao.find(id);
-		
-		response =  HandlerResponse.builder().setStatusCode(200).setObjectBody(retriviedAvenger).build();
-		
+		retriviedAvenger = dao.find(id);
 			
 		}catch (NoSuchElementException e) {
 			throw new AvengerNotFoundException("[NotFound] - Avenger notFound");
 		}
+		
+		response =  HandlerResponse.builder().setStatusCode(200).setObjectBody(retriviedAvenger).build();
 		return response;
 		
 	}
