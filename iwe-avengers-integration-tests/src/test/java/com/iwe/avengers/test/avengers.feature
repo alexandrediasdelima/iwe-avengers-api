@@ -8,7 +8,7 @@ Scenario: Should return unathorized access
 
 Given path 'avengers', 'anyid'
 When method get
-Then status 404
+Then status 401
 
 Scenario: Registry a new Avenger
 
